@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet1" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>expereience</title>
+</head>
+<style>
+
+
+      .top_header {
+      background: white;
+      top: 0px;
+      height: 80px;
+      display: flex;
+      width: 100%;
+      z-index: 999;
+      margin-right: 0;
+      margin-left: 0;
+      }
+
+      .top_left_bar {
+      float: left;
+      text-indent: 100px;
+      display: flex;
+      align-items: center;
+      width: 60%;
+      font-weight: bold;
+      font-size: 35px;
+      background: black;
+      height: 100%;
+      font-family: Perpetua;
+
+
+      }
+
+      .top_right_bar {
+      background: black;
+      text-indent: 40px;
+      display: flex;
+      align-items: center;
+      float: right;
+      width: 45%;
+      margin-right: 0;
+      z-index: 500;
+      overflow: hidden;
+      }
+
+
+      .profile_picture{
+      height: 350px;
+      width: 600px;
+      position: absolute;
+      top: 160px;
+      right: 145px;
+      }
+
+      .top_right_picture{
+      float: right;
+      width: 30%;
+      height 30%;
+      }
+
+
+      .top_right_link:hover {
+      text-decoration: underline;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-family: Perpetua;
+      }
+
+      .experience_picture {
+      height: 250px;
+      width: 400px;
+      display: flex;
+      }
+
+
+      .dropdown_button {
+      border: none;
+      outline: none;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      font-size: 25px;
+      color: white;
+      font-weight: bold;
+      }
+
+      .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: grey;
+      min-width: 20px;
+      box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+      display: block;
+      background-color: black;
+      }
+
+      .introduction_text {
+      text-align: center;
+      font-style: normal;
+      font-family: Helvetica;
+      }
+
+      .float-container {
+      padding: 20px;
+      display: flex;
+      }
+
+      .float_child_left {
+      width: 50%;
+      float: left;
+      padding: 20px;
+      display: flex;
+      }
+
+      .float_child_right {
+      width: 50%;
+      float: right;
+      padding: 20px;
+      display: flex;
+      }
+
+      .white_page_break {
+      background: white;
+      height: 70px;
+      width: 100%;
+      }
+
+      .footer {
+      background: black;
+      display: flex;
+      width: 100%
+      height: 150px;
+      padding: 150px;
+      }
+</style>
+<div class = "top_header">
+  <div class = "top_left_bar">
+    <p style = "color: white; text-decoration: underline; overflow: hidden;">ELLIOT MOLLMAN.</p>
+  </div>
+  <div class ="top_right_bar">
+      <div style = "padding: 30px; float: left; display: flex;">
+          <div class = "dropdown" style = " float: left; overflow: hidden;">
+              <button class = "dropdown_button">
+                  <i class="fa fa-caret-down" style = "">Projects</i>
+              </button>
+              <div class = "dropdown-content">
+                  <a style = "color: white; text-decoration: none; text-align: center; font-size: 23px;" href="https://github.com/ElliotMollman">Github</a>
+              </div>
+          </div>
+      </div>
+      <div style = "display: flex;">
+          <a class="top_right_link" style = "color: white; text-decoration: none; margin-left: 10px; margin-right: 10px; font-family: Perpetua; font-size: 27px;" href="website_experience_page.html">Experience</a>
+          <a class="top_right_link" style = "color: white; text-decoration: none; margin-left: 10px; margin-right: 10px; font-family: Perpetua; font-size: 27px;" href="website_blog_page.html">Blog</a>
+          <a class="top_right_link" style = "color: green; text-decoration: none; margin-left: 10px; margin-right: 10px; font-family: Perpetua; font-size: 27px;" href="Website.html">Home</a>
+      </div>
+      <div style = "float: right; width: 20%; display: flex; margin-right: 0; padding: 30px;">
+          <img class = "top_right_picture" src = "pictures/instagram.jpg">
+          <img class = "top_right_picture" src = "pictures/discord.jpg">
+          <img class = "top_right_picture" src = "pictures/linkedin.jpg">
+      </div>
+  </div>
+</div>
+<body style = "margin: 0px; padding: 20px; background-color: black; color: white;">
+    <div style="height: 150px; width: 100%;"></div>
+    <div style = "width: 100%;">
+        <div style = "border-style: dotted; border-color: white white grey white; width: 70%; margin: auto; float: center;">
+            <p style = "text-align: center; font-size: 40px; color: white;">Certifications</p>
+        </div>
+        <p style = "text-align: center; font-size: 20px; word-spacing: 3px; color: white">TestOut PC Pro, TestOut Network Pro, 100 days of Python Bootcamp</p>
+    </div>
+    <div style="height: 100px; width: 100%;"></div>
+    <div style="display: flex; padding: 10px; background-color: black; height: 100%">
+        <div class = "float_child_left">
+            <ul style = "padding: 30px;">
+                <p style = "text-align: center; font-size: 30px; color: green;">Work-Experience</p>
+                <p style = "font-size: 22px; text-align: center;">-Food Industry-</p>
+                <p style = "font-size: 20px; text-indent: 30px;">
+                    Branching off from reffing hockey games, I decide to persue the food industry.
+                    Starting my journey at the Cheesecake Factory and later BJ's,
+                    I learned how to be a leader, managing multiple tasks at once, and keep a level head under
+                    stressfull circumstances.</p>
+                <p style = "font-size: 20px; text-indent: 30px;">
+                    <br>
+                    <br>
+                    I taught myself how to think on my feet, always asking "what's next?" or how can I help?".
+                    Quicker than I could do my job, I became the one managers would come to for help and
+                    specific tasks. This is also where I found my love for teaching and helping others.
+                    I feel whenever I can do this, it would make my past self proud now that I can teach these
+                    things to empower others.
+                    <br>
+                    <br>
+                    In 2023, I began searching for internships to better my experience in the technical field.
+                    <br>
+                    <br>
+                    <br>
+                </p>
+                <p style = "font-size: 22px; text-align: center;">-Thermal Electronics-</p>
+                <p style = "font-size: 20px; text-indent: 30px;">
+                    Once I had obtained a decent level of schooling, I applied for internships for the summer of 2023. Luckily, I found a 3 month paid internship with a
+                    manufacturing company in Lake Elsinore CA where I became fimilair with using and updating their MRP system which tracks their inventory and part
+                    specs. After 2 months I was brought on as a regular employee and began working my way up.</p>
+                <br>
+                <br>
+                <p style = "font-size: 20px;">
+                    From pulling and issuing kits to the production floor, I started training for the role of a test technician, testing numerous cable assemblies and
+                    other electronics parts. I became familiar with reading and understanding test documents and test equipment like AC/DC dialectric tester, Insulation Resistance,
+                    multimeters for testing continuity, oscilloscopes to read digital wavelengths, and other types of methods.
+                    <br>
+                    <br>
+                    I then get some hands-on experience with braiding cables, using automatic wire cutting machines, and potting connectors in the lab. This work required my to report
+                    back to engineers and take a lot of patience to confirm accuracy.
+                </p>
+            </ul>
+        </div>
+        <div class = "float_child_right" style = "display: flex; text-indent: 30px; background: grey; height: 1200px; padding: 50px; font-size: 20px; font-family: Garamond;">
+            <ul>
+                <p>"Life in the kitchen is always eventfull, especially with such a energetic group of people,
+                but it doesn't get any easier when you know all the stations. After just a year, I was given
+                the opportunity to become a kicthen manager, and help open a restaurant in Texas for BJ's Brewhouse."
+                <br>
+                </p>
+                <img class = "experience_picture" src = "https://cloudfront.bjsrestaurants.com/img_5e4c28052aac39.26223212_456_Temecula_2019.jpg">
+                <img class = "experience_picture" src = "https://www.dailynews.com/wp-content/uploads/2019/10/RPE-L-CHEESECAKE-1117-05-1.jpg?w=640">
+                <p>
+                <br>
+                "Although my love for food was worth considering, my passion for technology was unmatched."
+                </p>
+                <img class = "experience_picture" src = "pictures\TEIimage.PNG">
+                <img class = "experience_picture" src = "pictures\TESTimage.PNG">
+            </ul>
+        </div>
+    </div>
+    <div class = "float-container" style = "margin-left: 50px;">
+        <div class = "float_child_left" style = "text-indent: 30px; background: grey; height: 930px; padding: 50px; font-size: 20px; font-family: Garamond;">
+            <ul>
+                <p>
+                    "My drive and excitement for engineering was my way of quickly completing assignments while
+                    getting ahead enough to persue other means of education."
+                </p>
+                <img class = "experience_picture" src = "pictures\PALOMARimage.jpg">
+                <p>
+                    <br>
+                    <br>
+                    "I found Udemy which hosted dundreds of online bootcamps which I took advantage of in my
+                    spare time. Coding bootcamps were a huge help in boosting my learning capacity and understanding
+                    complicated concepts. Alongside python, I became familiar with HTML(enough to build this website),
+                    Excel spreadsheets, Linux, TC/IP networking, and computer hardware.
+                    <br>
+                    <br>
+                    "As for my latest project, I am experimenting with a home network simuation with some switches and
+                    virtual machines. Launching attacks and monitoring network activity for these systems.
+                </p>
+                <img class = "experience_picture" src = "pictures\SECURITYimage.jpg">
+            </ul>
+        </div>
+        <div class = "float_child_right">
+            <ul style = "padding: 30px;">
+                <p style = "text-align: center; font-size: 30px;">School-Experience</p>
+                <p style = "font-size: 22px; text-align: center;">-Palomar College-</p>
+                <p style = "font-size: 20px; text-indent: 30px;">
+                    Since I began high school, I took the remarkable opportunity to access a higher education
+                earlier, and was able to accel myself ahead of my expected graduation date.</p>
+                <p style = "font-size: 20px; text-indent: 30px;">
+                    <br>
+                    <br>
+                    Once a eletrical engineering major, I decided to change my major to cyber-security due to
+                    a rough semester. A chellenging experience with math, but a passion for coding brought me to
+                    the doorway of cyber-security. I was in luck when I learned Palomar had an associates program
+                    that I will have completed at the end of spring semester 2024.
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+                <p style = "font-size: 22px; text-align: center;">-National University-</p>
+                <p style = "font-size: 20px; text-indent: 30px;">
+                    I was even more fortunate to learn that Palomar was a feeder into National University.
+                    A 50% cost reduction on their classes would be awarded once the associates from Palomar
+                    is completed. Beginning in fall 2023, I would expect to earn my batchelors in spring 2026.
+                </p>
+            </ul>
+        </div>
+    </div>
+<hr style = "height: 1px; background-color: grey; margin-left: 60px; margin-right: 60px;">
+<div style = "width: 100%; height: 100px; text-align: center; padding: 30px; font-size: 20px;">
+    <p>View my resume here:</p>
+    <a href = "">download</a>
+</div>
+</body>
+</html>
