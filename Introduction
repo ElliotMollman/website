@@ -1,0 +1,4 @@
+This is my personal website I have hosted on my apache2 webserver. I am always updating the code/content so the files will be changing overtime. On my apache2 server, I could visit the site via either the IP of the machine 192.168.1.162 or hostname dell790.local. but
+couldn't route a domain name to the IP. Eventually, I will hopefully route the initial page to the "Home" page of the files but for now it is the directory of content.
+
+In this project, I am demonstrated how to use CSS inline with HTML using achor tags, buttons, stylizing, imaging, page routing, downloading content, and file heiarchy.
