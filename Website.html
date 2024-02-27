@@ -14,7 +14,7 @@
       width: 100vw;
       height: 100vh;
       padding: 0;
-      background-color: black;
+      background-color: #080808;
       }
 
       .main_div {
@@ -25,7 +25,6 @@
 
 
       .top_header {
-      background: white;
       top: 0px;
       height: 80px;
       display: flex;
@@ -37,21 +36,19 @@
 
       .top_left_bar {
       float: left;
-      text-indent: 100px;
+      text-indent: 250px;
       display: flex;
       align-items: center;
       width: 60%;
       font-weight: bold;
       font-size: 35px;
-      background: black;
+      background-image: linear-gradient(to right, black, black, black, grey, grey);
       height: 100%;
       font-family: Perpetua;
-
-
       }
 
       .top_right_bar {
-      background: black;
+      background-image: linear-gradient(to right, grey, black, black);
       text-indent: 40px;
       display: flex;
       align-items: center;
@@ -156,7 +153,6 @@
       }
 
       .middle_button {
-       border: 1px outset white;
        border-radius: 8px;
        padding:20px;
        background-color: #00fa9a;
@@ -178,22 +174,21 @@
 
 
       .footer {
-      background: black;
       display: flex;
-      width: 100%
-      height: 150px;
-      padding: 150px;
+      width: 100%;
+      height: 400px;
+      padding: 30px;
       }
 </style>
 <body class = "main">
 <div class="middle_button">
-    <p style="margin: auto; font-size:23px; font-family:sans-serif;">Get Started</p>
+    <a href="Contact.html" style="margin: auto; font-size:23px; font-family:sans-serif; text-decoration:none; color:black;">Contact Me</a>
 </div>
 <div>
 <div class="main_div">
     <div class = "top_header">
       <div class = "top_left_bar">
-        <p style = "color: white; text-decoration: underline; overflow: hidden;">ELLIOT MOLLMAN.</p>
+        <p style = "color: white; overflow: hidden;">ELLIOT MOLLMAN.</p>
       </div>
       <div class ="top_right_bar">
           <div style = "padding: 30px; float: left; display: flex;">
@@ -207,14 +202,13 @@
               </div>
           </div>
           <div style = "display: flex;">
-              <a class="top_right_link" href="website_experience_page.html">Experience</a>
-              <a class="top_right_link" href="website_blog_page.html">Blog</a>
-              <a class="top_right_link" href="Website.html">Home</a>
+              <a class="top_right_link" href="Experience.html">Experience</a>
+              <a class="top_right_link" href="Blog.html">Blog</a>
+              <a class="top_right_link" href="Home.html">Home</a>
           </div>
           <div style = "float: right; width: 20%; display: flex; margin-right: 0; padding: 30px;">
-              <img class = "top_right_picture" src = "pictures/instagram.jpg">
-              <img class = "top_right_picture" src = "pictures/discord.jpg">
-              <img class = "top_right_picture" src = "pictures/linkedin.jpg">
+              <a href="https://discordapp.com/users/elliot0567"><img class = "top_right_picture" style ="width:60px;" src = "pictures/discord.jpg"></a>
+              <a href="https://www.linkedin.com/in/elliot-mollman-b64ba1240/"><img class = "top_right_picture" style ="width:60px;" src = "pictures/linkedin.jpg"></a>
           </div>
       </div>
     </div>
@@ -222,40 +216,28 @@
             <div style = "float: left; width: 42%; height: 100%;">
                 <p style = "color: white; font-size: 40px; position: absolute; top: 120px; right: 450px; padding: 40px;">
                     Hi, I'm <span style='color:#00fa9a'>Elliot!</span> Learn about me and my journey in engineering and cybersecurity.</p>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
               <p style = "margin-left: 45px; color: grey; font-size: 27px; text-indent: 80px;">Here I'll share some of my favorites aspects of engineering such as coding, cybersecurity, and networking. Feel free to fallow me on any Social media platform.</p>
             </div>
         </div>
       <br>
       <hr style = "height: 1px; background-color: grey; width: 80%;">
       <br>
-    <div class = "float-container" style = "padding: 0px; height: 500px; background-color: black;">
+    <div class = "float-container" style = "padding: 0px; display:flex; background-image: linear-gradient(#080808, #080808, grey);">
         <div style = "padding: 80px; display: flex; height: 100%; width: 33%; float: left;">
             <img src="pictures/PCimage.PNG" style = "height: 85px; width: 85px;">
             <div style = "float: right; padding: 20px; display: flex;">
                 <ul style="list-style: none; text-align: left;">
                     <p style = "color: white; font-size: 25px; ">Hardware And Electronics</p>
-                    <p style = "color: grey; font-size: 18px;">A hands on experience with PC hardware and electronics should be the first step to fully understanding any
-                    engineering dicipline, and is one of the aspects I most enjoy and appreciate. Among the various hardware components, operating systems, and
+                    <p style = "color: grey; font-size: 18px;">A hands on experience with electronics and systems should be the first step to fully understanding any
+                    engineering dicipline, and is one of the aspects I most enjoy and appreciate. Knowledge around how information is sent, received, and stored builds key understanding.
+                        Among the various hardware components, operating systems, and
                     components, every engineer should become well rounded with these.</p>
                     <br>
                     <p style = "color: grey; font-size: 18px;">This led to my first job as a test technician, troubleshooting cable assemblies, operating
                     testing equipment such as: Hypot/Dialectric tests, Insulation Resistance, Multimeters, oscilloscopes, and other methods which gave me the fundamental
                     background I desired.</p>
                     <br>
-                    <a style = "color: green; font-size: 18px;" href="website_experience_page.html">Learn More </a>
+                    <a style = "color: green; font-size: 18px;" href="/Experience.html">Learn More </a>
                 </ul>
             </div>
        </div>
@@ -271,7 +253,7 @@
                     <p style = "color: grey; font-size: 18px;">I was quickly drawn to python and HTML because of the usefulness of the skills. I also dived deeper into configuring
                     cisco devices and playing with different operating systems on virtual machines.</p>
                     <br>
-                    <a style = "color: green; font-size: 18px;" href="website_experience_page.html">Learn More </a>
+                    <a style = "color: green; font-size: 18px;" href="/Experience.html">Learn More </a>
                 </ul>
             </div>
        </div>
@@ -286,23 +268,45 @@
                     <p style = "color: grey; font-size: 18px;">Alongside school, I am always on the hunt for more certifications to obtain.
                     Please read more about my plans and continued progress in school as I keep updating.</p>
                     <br>
-                    <a style = "color: green; font-size: 18px;" href="website_experience_page.html">Learn More </a>
+                    <a style = "color: green; font-size: 18px;" href="/Experience.html">Learn More </a>
                 </ul>
             </div>
        </div>
     </div>
+    <div class = "float-container" style ="background-image: linear-gradient(grey, #080808);">
+        <div class = "float_child_left" style="height:550px; margin-left:450px;">
+            <ul>
+                <p style="color:white; font-size:24px;">Hard Skills:</p>
+                <hr style = "height: 1px; background-color: grey; width: 100%;">
+                <p style="color:white; font-size:18px; text-indent:5px;">Python</p>
+                <p style="color:white; font-size:18px; text-indent:5px;">HTML</p>
+                <p style="color:white; font-size:18px; text-indent:5px;">CSS</p>
+                <p style="color:white; font-size:18px; text-indent:5px;">Linux</p>
+                <p style="color:white; font-size:18px; text-indent:5px;">Windows</p>
+                <p style="color:white; font-size:18px; text-indent:5px;">Hardware</p>
+                <p style="color:white; font-size:18px; text-indent:5px;">TCP/IP Networking</p>
+                <p style="color:white; font-size:18px; text-indent:5px;">Wireshark</p>
+                <p style="color:white; font-size:18px; text-indent:5px;">Cisco</p>
+            </ul>
+        </div>
+        <div class="float_child_right" style="height:550px; margin-right:450px;">
+            <img src="pictures/Elliot4.jpg" style="height:500px; width:80%;">
+        </div>
+    </div>
+        <hr style = "height: 1px; background-color: grey; width: 70%;">
         <div class = "footer">
-          <div class = "float_child_left">
+          <div style="width:33%; padding:20px; display:flex; margin-left:100px;">
             <ul style="line-height: 150%; color: white; font-size: 16px;">
               <p style = "font-size: 20px; color: white;">Contacts</p>
               <p> <hr style = "height: 1px; background-color: white; border: 1px solid white;"></p>
-              <p>elliotmollman@yahoo.com</p>
+              <p>elliotmollman@yahoo.com
+              <p>elliotmollman@outlook.com</p>
               <p>emollman27@gmail.com</p>
               <p>Mobile: 951-528-6817</p>
               <p>Home: 951-676-9124</p>
             </ul>
           </div>
-            <div class = "float_child_right">
+            <div style="width:33%; padding:20px; display:flex; margin-right:100px;">
               <ul style="line-height: 150%; color: white; font-size: 16px;">
                   <p style = "font-size: 20px; color: white;">Fallow Me On:</p>
                   <p> <hr style = "height: 1px; background-color: white; border: 1px solid white;"></p>
@@ -312,11 +316,11 @@
                   <p>Github: https://github.com/ElliotMollman</p>
               </ul>
             </div>
-            <div class = "float_child_right">
+            <div style="width:33%; padding:20px; display:flex;">
               <ul style="line-height: 150%; color: white; font-size: 16px;">
                   <p style = "font-size: 20px; color: white;">Download My Resume</p>
                   <p> <hr style = "height: 1px; background-color: white; border: 1px solid white;"></p>
-                  <a style="color:blue;" href="">Download</a>
+                  <a href = "Downloads/ELLIOT_MOLLMAN_Resume_11-19-2023.docx" download="Elliot's Resume Download" style="text-decoration:none; color:green; font-size: 18px; ">Download</a>
               </ul>
             </div>
         </div>
