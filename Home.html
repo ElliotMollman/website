@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet1" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet2" type="text/css" href="Styles.html">
+    <link rel="stylesheet" href="Home.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <title>Home</title>
+  </head>
+
+
+
+<body class = "main">
+<div onload="page_loaded()" class="main_div">
+    <div class = "top_header">
+      <div class = "top_left_bar">
+        <p style = "color: black; overflow: hidden;">ELLIOT MOLLMAN.</p>
+      </div>
+      <div class ="top_right_bar">
+          <div style = "padding: 30px; float: left; display: flex;">
+              <div class = "dropdown" style = " float: left; overflow: hidden;">
+                  <button class = "dropdown_button">
+                      <i class="fa fa-caret-down" >Projects</i>
+                  </button>
+                  <div class = "dropdown-content">
+                      <a style = "color: black; text-decoration: none; text-align: center; font-size: 23px;" href="https://github.com/ElliotMollman">Github</a>
+                  </div>
+              </div>
+          </div>
+          <div style = "display: flex;">
+              <a class="top_right_link" href="Experience.html">Experience</a>
+              <a class="top_right_link" href="Blog.html">Blog</a>
+              <a class="top_right_link" href="Home.html">Home</a>
+          </div>
+          <div style = "float: right; width: 20%; display: flex; margin-right: 0; padding: 30px;">
+              <a href="https://discordapp.com/users/elliot0567"><img class = "top_right_picture" style ="margin-left: 25px; padding:10px;" src = "pictures/discord.jpg"></a>
+              <a href="https://www.linkedin.com/in/elliot-mollman-b64ba1240/"><img class = "top_right_picture" style ="padding:10px;" src = "pictures/linkedin.png"></a>
+          </div>
+        </div>
+    </div>
+    <div style = "width: 100%; height: 800px; background-color:white; display: flex;">
+        <div style = "width: 100%; height: 100%; display:flex;">
+            <div style="width: 50%; height: 100%; display: flex; padding: 50px;">
+                <ul class = "welcome_text">
+                    <p style = "margin-left: 150px; color: black; font-size: 27px; text-indent: 80px;">Here I'll share some of my favorites aspects of engineering such as <span style='color:#159765'>coding</span>,
+                         <span style='color:#159765'>cybersecurity</span>, and <span style='color:#159765'>networking</span>. Also, various activites I enjoy in my personal life. I am currently persuing my
+                        associates of science in cyber security from Palomar College and soon to be furthering my education at Nationalo University in their batchelors program. Please feel free to reach out to
+                        me via social media or the "Contact Me" link.</p>
+                        <br>
+                        <div class="middle_button">
+                            <a href="Contact.html" style="margin: auto; font-size:23px; font-family:sans-serif; text-decoration:none; color:black;">Contact Me</a>
+                        </div>
+                        <br>
+                        <br>
+                        <p style = "margin-left: 150px; color: black; font-size: 27px; text-indent: 80px;">I am also reachable throught social media which I have linked to at the end of the
+                        page or simply clicking on the top right icons.</p>
+                </ul>
+            </div>
+            <div style="width: 50%; height: 100%; display: flex; padding: 10px;">
+                <ul style=" width: 100%; padding: 50px;">
+                    <div style="width: 100%; height: 10%; display: flex;">
+                        <p style="margin-left: 200px; font-size: 15px; font-family: Helvetica, sans-serif;"> View the pictures below to learn about my jouney.</p>
+                    </div>
+                    <div class="slideshow_container">
+                        <img class = "slide_image fade" src="pictures/pcb.PNG">
+                        <img class = "slide_image fade" src="pictures/3d_printer.PNG">
+                        <img class = "slide_image fade" src="pictures/CYBERimage.PNG">
+                        <img class = "slide_image fade" src="pictures/CiscoRouter1921Config_4.PNG">
+                        <img class = "slide_image fade" src="pictures/testing.jpg">
+
+                        <a class="prev" onclick="prev_slide()">&#10094;</a>
+                        <a class="next" onclick="next_slide()">&#10095;</a>
+                        <br>
+                    </div>    
+                    <div style="text-align:center; height:10%; width: 100%; display: flex;">
+                        <!-- Note: the left dot is positioned from the left and all dots are displayed as an inline block. This will make them into a straight line and can move all horizontally
+                        by changing the margin=left value for the first dot.-->
+                        <span style = "margin-left:350px;" class="dot" onclick="dot_index(0)"></span>
+                        <span class="dot" onclick="dot_index(1)"></span>
+                        <span class="dot" onclick="dot_index(2)"></span>
+                        <span class="dot" onclick="dot_index(3)"></span>
+                        <span class="dot" onclick="dot_index(4)"></span>
+                    </div>
+                    <div style="width: 100%; height: 10%; display: flex;">
+                        <p></p>
+                    </div>
+                </ul> 
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr style = "height: 1px; background-color: grey; width: 80%;">
+    <br>
+    <div style="padding: 50px; background-color: #070707; text-align: center;">
+        <ul>
+            <input style = "background-color : rgb(24, 23, 23); border-width: 5px; border-color: grey; margin-top: 50px; height: 40px; font-size: 20px; color: white; border-radius: 15px;" onfocus="this.value=''" autocomplete="off" value= "Search" type="text" id="search_bar" maxlength="30" size="60">
+            <p style="margin-bottom: 30px; color:#159765"> This feature is still in works</p>
+        </ul>
+    </div>
+    <div class = "float-container" style = "display:flex; background-image: linear-gradient(#080808, #080808, grey);">
+        <div style = "padding: 80px; display: flex; height: 100%; width: 33%; float: left;">
+            <img src="pictures/PCimage.PNG" style = "height: 85px; width: 85px;">
+            <div style = "float: right; padding: 20px; display: flex;">
+                <ul style="list-style: none; text-align: left;">
+                    <p style = "color: white; font-size: 25px; ">Hardware And Electronics</p>
+                    <p style = "color: grey; font-size: 18px;">A hands on experience with electronics and systems should be the first step to fully understanding any
+                    engineering dicipline, and is one of the aspects I most enjoy and appreciate the most. Knowledge around how information is sent, received, and stored builds key understanding. Among the various hardware components, operating systems, and
+                    components, every engineer should become well rounded with these.</p>
+                    <br>
+                    <p class = "learn_more_text">This led to my first job as an assembler at Thermal Electronics where I built cables per assembly drawings, 
+                    troubleshot and testing cable assemblies, operating testing equipment such as multimeters and oscilloscopes. These tasks gave me the fundamental
+                    background I desired.</p>
+                    <br>
+                    <button style = "background-color: inherit; color: #159765; font-size: 18px; text-decoration: none;" onclick="learn_more(0)">learn more</button>
+                </ul>
+            </div>
+       </div>
+       <div style = "padding: 80px; display: flex; height: 100%; width: 33%;">
+            <img src="pictures/CMDimage.PNG" style = "height: 65px; width: 60px;">
+            <div style = "float: right; padding: 20px; display: flex;">
+                <ul style="list-style: none; text-align: left;">
+                    <p style = "color: white; font-size: 25px; ">Software</p>
+                    <p style = "color: grey; font-size: 18px;">In a career of Information Technology(IT), software plays the most crucial role in gathering data from attackers
+                    and from the network. Some of the most useful skills to learn in IT are ones you can't see such as coding, scripting, and machine-learning to become informed
+                    about persistant attacks that threaten our social and digital identities.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p class = "learn_more_text">I was quickly drawn to Python and Javascript because of the high demand of the skills. I also dived deeper into configuring
+                    cisco devices creating subnets with vlans.</p>
+                    <br>
+                    <button style = "background-color: inherit; color: #159765; font-size: 18px; text-decoration: none;" onclick="learn_more(1)">learn more</button>
+                </ul>    
+            </div>
+       </div>
+       <div style = "padding: 80px; display: flex; height: 100%; width: 33%; float: right;">
+            <img src="pictures/CYBERimage.PNG" style = "height: 80px; width: 90px;">
+            <div style = "float: right; padding: 20px; display: flex;">
+                <ul style="list-style: none; text-align: left;">
+                    <p style = "color: white; font-size: 25px; ">CyberSecurity</p>
+                    <p style = "color: grey; font-size: 18px;">As part of my major in IT, I became more aware of the digital world at work. while enrolled at Palomar College
+                    in their Cybersecurity Associates program, I have been consistantly working on new projects to futher my personal knowledge. As of May 2024, I enrolled in my first class
+                     at National University to continue my education.</p>
+                    <br>
+                    <p class = "learn_more_text">Alongside school, I am always on the hunt for more certifications to obtain which can be seen <a style="color:#159765; text-decoration: none;" href="Experience.html">here</a>.
+                    Please read more about my plans and continued progress in school as I keep updating.</p>
+                    <br>
+                    <button style = "background-color: inherit; color: #159765; font-size: 18px; text-decoration: none;" onclick="learn_more(2)">learn more</button>
+                </ul>
+            </div>
+       </div>
+    </div>
+    <div class = "float-container" style ="background-image: linear-gradient(grey, #080808);">
+        <div class = "float_child_left" style="height:550px; margin-left:450px;">
+            <ul class = "skills">
+                <p style="color:white; font-size:24px;">Hard Skills:</p>
+                <hr style = "height: 1px; background-color: grey; width: 100%;">
+                <p >Python</p>
+                <p> Javascript</p>
+                <p >HTML</p>
+                <p >CSS</p>
+                <p >Linux</p>
+                <p >Windows</p>
+                <p >Hardware</p>
+                <p >TCP/IP Networking</p>
+                <p >Wireshark</p>
+                <p >Cisco</p>
+            </ul>
+        </div>
+        <div class="float_child_right" style="height:550px; margin-right:450px;">
+            <img src="" style="height:500px; width:80%;">
+        </div>
+    </div>
+        <div class = "footer">
+            <div style="width:33%; padding:20px; display:flex; margin-left:100px;">
+                <ul style="line-height: 150%; color: white; font-size: 17px; font-family: Helvetica, sans-serif">
+                <p style = "font-size: 20px; color: white;">Contacts</p>
+                <p> <hr style = "height: 0.2px; background-color: black; border: 1px solid white;"></p>
+                <p>elliotmollman@yahoo.com
+                <p>elliotmollman@outlook.com</p>
+                <p>emollman27@gmail.com</p>
+                <p>Mobile: 951-528-6817</p>
+                <p>Home: 951-676-9124</p>
+                </ul>
+            </div>
+            <div style="width:33%; padding:20px; display:flex; margin-right:100px;">
+            <ul style="line-height: 150%; color: white; font-size: 17px; font-family: Helvetica, sans-serif">
+                <p style = "font-size: 20px; color: white;">Follow Me On:</p>
+                <p> <hr style = "height: 0.2px; background-color: black; border: 1px solid white;"></p>
+                <p>Linkedin: https://www.linkedin.com/in/elliot-mollman-b64ba1240/</p>
+                <p>Discord: Elliot#0567</p>
+                <p>Instagram: </p>
+                <p>Github: https://github.com/ElliotMollman</p>
+            </ul>
+            </div>
+            <div style="width:33%; padding:20px; display:flex;">
+            <ul style="line-height: 150%; color: white; font-size: 17px; font-family: Helvetica, sans-serif">
+                <p style = "font-size: 20px; color: white;">Download My Resume</p>
+                <p> <hr style = "height: 0.2px; background-color: black; border: 1px solid white;"></p>
+                <a class = "resume_download" href = "Downloads/ELLIOT_MOLLMAN_Resume_11-19-2023.docx" download="Elliot's Resume Download">Download</a>
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Home.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel = "stylesheet" href = "Contact.css">   
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body id ="body">
+    <div style="height: 100%; width:100%; display: flex;">
+        <img id = "background_picture" src="pictures/mail2.webp">
+        <a href="Home.html">
+            <i id="return_arrow"></i>
+        </a>
+        <a href="Home.html">
+            <p id = "return_button">Return</p>
+        </a>
+    </div>
+    <div id = "left_box">
+        <div style = "display: flex; height: 20%; width: 100%; padding: 20px;">
+            <div style="float: left; width: 30%; height: 100%; padding:20px; display: flex;">
+                <img id = "mailbox_picture" src = "pictures/mail_box.png"></img>
+            </div>
+            <div style="float: right; width: 70%; height: 100%; padding: 20px; display: flex;">
+                <p style="text-decoration: none; color: rgb(226, 205, 17); font-size: 25px; font-family: Noto Sans, sans-serif; font-weight: bold;" >Enter Information Below</p>
+            </div>
+        </div>
+        <div style = "height: 80%; width: 100%; display: flex; padding: 5px;">
+            <ul id = "list"> 
+                <p>Name:</p>
+                <input style = "height:20px;" type="text" id="sender_name" maxlength="30" size="30">
+                <br><br><br>
+                <p>Message Body:</p>
+                <p>Max 150 characters</p>
+                <textarea style = "height: 170px; width:400px;" type="text" id="message_body" maxlength="150" rows="10" cols="30"></textarea>
+                <br>
+                <button id = "send_message" type = "submit" onclick="(get_message())">Send</button>
+            </ul>
+        </div>
+     </div>
+    <div id = "right_box">
+        <ul id = "list">
+            <li style = "font-size: 22px; color: rgb(226, 205, 17); font-family: Noto Sans, sans-serif; font-weight: bold; padding:10px;">I look forward to hearing from you!</li>
+            <li>Cell: (951)-528-6817</li>
+            <li></li>
+        </ul>
+     </div>
+     <script src = "Contact.js"></script>
+</body>
+</html>
